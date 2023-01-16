@@ -61,6 +61,10 @@ context-menu-content button[role=menuitem]::-moz-focus-inner {
   --ngx-contextmenu-item-text-hover-color: #5a6473;
 }
 
+.ngx-contextmenu .ngx-contextmenu--dropdown-menu:empty {
+  display: none;
+}
+
 context-menu-content:focus-visible {
   outline: var(--ngx-contextmenu-outline);
 }
