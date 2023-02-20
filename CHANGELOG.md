@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Constraint context menu height to 100vh, can be changed with the `--ngx-contextmenu-max-height` CSS property
+
+### Added
+
+- Add `closeAll` and `hasOpenMenu` methods to the `ContextMenuService`
+
 ## [14.1.1] - 2022-11-24
 
 ### Fixed
