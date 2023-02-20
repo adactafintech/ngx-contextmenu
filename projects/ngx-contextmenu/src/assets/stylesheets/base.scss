@@ -27,8 +27,19 @@
   --ngx-contextmenu-item-separator-width: 96%;
   --ngx-contextmenu-item-padding: 6px 20px;
   --ngx-contextmenu-item-text-hover-color: #5a6473;
+--ngx-contextmenu-max-height: 100vh;
 }
 
+.ngx-contextmenu {
+  .ngx-contextmenu--dropdown-menu:empty {
+    display: none;
+  }
+}
+.ngx-contextmenu--dropdown-menu {
+    max-height: var(--ngx-contextmenu-max-height);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 context-menu-content {
   &:focus-visible {
     outline: var(--ngx-contextmenu-outline);
