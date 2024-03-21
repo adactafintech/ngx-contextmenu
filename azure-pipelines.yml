@@ -20,12 +20,12 @@ steps:
       verbose: false
       customCommand: "install --force"
 
-  - task: Npm@1
-    displayName: "npm version"
-    inputs:
-      command: custom
-      verbose: false
-      customCommand: "--no-git-tag-version version $(Build.SourceBranchName)"
+  # - task: Npm@1
+  #   displayName: "npm version"
+  #   inputs:
+  #     command: custom
+  #     verbose: false
+  #     customCommand: "--no-git-tag-version version $(Build.SourceBranchName)"
 
   - task: Npm@1
     displayName: "npm build"
